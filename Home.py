@@ -33,9 +33,9 @@ util.Config_pag()
 util.generarMenu()
 
 # Redimensionar los logotipos
-path_logos1 = os path(util.path, "media", "logos", "logo1.png") 
-path_logos1 = os path(util.path, "media", "logos", "logo2.png") 
-path_logos1 = os path(util.path, "media", "logos", "logo3.png") 
+path_logos1 = os.path(util.path, "media", "logos", "logo1.png") 
+path_logos1 = os.path(util.path, "media", "logos", "logo2.png") 
+path_logos1 = os.path(util.path, "media", "logos", "logo3.png") 
 
 logo1 = util.resize_image(path_logos1, 2.00)
 logo2 = util.resize_image(path_logos1, 2.00)
