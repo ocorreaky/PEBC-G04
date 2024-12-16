@@ -35,14 +35,10 @@ util.generarMenu()
 # Verificación
 st.write(f'ruta: {util.path}')
 
-# Define ruta base
-util.path = os.path.dirname(os.path.abspath(__file__))
-st.write(f'ruta: {util.path}')
-
 # Construcción robusta de rutas
-path_logo1 = os.path.join(util.path, "media", "logos", "logo1.png")
-path_logo2 = os.path.join(util.path, "media", "logos", "logo2.png")
-path_logo3 = os.path.join(util.path, "media", "logos", "logo3.png")
+path_logo1 = os.path.join(util.path, "media", "Logos", "Logo1.png")
+path_logo2 = os.path.join(util.path, "media", "Logos", "Logo2.png")
+path_logo3 = os.path.join(util.path, "media", "Logos", "Logo3.png")
 
 # Verifica la existencia de los archivos
 if not os.path.exists(path_logo1):
