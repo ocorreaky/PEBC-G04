@@ -22,8 +22,7 @@ import os
 import streamlit as st
 
 # Variable global con la ruta del proyecto
-#path = os.getcwd()
-path = os.path.dirname(os.path.abspath(__file__))
+path = os.getcwd()
 
 ##################################################################################################
 # Utilidades Generales de la Página
