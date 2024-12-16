@@ -32,6 +32,9 @@ util.Config_pag()
 # Llamar el menú
 util.generarMenu()
 
+# Verificación
+st.write(f'ruta: {util.path}')
+
 # Define ruta base
 util.path = os.path.dirname(os.path.abspath(__file__))
 
