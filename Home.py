@@ -32,21 +32,10 @@ util.Config_pag()
 # Llamar el menú
 util.generarMenu()
 
-# Verificación
-st.write(f'ruta: {util.path}')
-
 # Construcción robusta de rutas
 path_logo1 = os.path.join(util.path, "media", "Logos", "Logo1.png")
 path_logo2 = os.path.join(util.path, "media", "Logos", "Logo2.png")
 path_logo3 = os.path.join(util.path, "media", "Logos", "Logo3.png")
-
-# Verifica la existencia de los archivos
-if not os.path.exists(path_logo1):
-    raise FileNotFoundError(f"El archivo no se encuentra en la ruta: {path_logo1}")
-if not os.path.exists(path_logo2):
-    raise FileNotFoundError(f"El archivo no se encuentra en la ruta: {path_logo2}")
-if not os.path.exists(path_logo3):
-    raise FileNotFoundError(f"El archivo no se encuentra en la ruta: {path_logo3}")
 
 # Procesa imágenes
 logo1 = util.resize_image(path_logo1, 2.00)
