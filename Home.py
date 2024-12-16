@@ -32,11 +32,23 @@ util.Config_pag()
 # Llamar el menú
 util.generarMenu()
 
-# Redimensionar los logotipos
+# Define ruta base
+util.path = os.path.dirname(os.path.abspath(__file__))
+
+# Construcción robusta de rutas
 path_logos1 = os.path.join(util.path, "media", "logos", "logo1.png")
 path_logos2 = os.path.join(util.path, "media", "logos", "logo2.png")
 path_logos3 = os.path.join(util.path, "media", "logos", "logo3.png")
 
+# Verifica la existencia de los archivos
+if not os.path.exists(logo_path1):
+    raise FileNotFoundError(f"El archivo no se encuentra en la ruta: {logo_path1}")
+if not os.path.exists(logo_path2):
+    raise FileNotFoundError(f"El archivo no se encuentra en la ruta: {logo_path2}")
+if not os.path.exists(logo_path3):
+    raise FileNotFoundError(f"El archivo no se encuentra en la ruta: {logo_path3}")
+
+# Procesa imágenes
 logo1 = util.resize_image(path_logos1, 2.00)
 logo2 = util.resize_image(path_logos2, 2.00)
 logo3 = util.resize_image(path_logos3, 2.00)
