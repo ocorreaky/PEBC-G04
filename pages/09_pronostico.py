@@ -29,10 +29,15 @@ util.Config_pag()
 # Llamar el menú
 util.generarMenu()
 
-# Redimensionar los logotipos
-logo1 = util.resize_image(util.path + "/media/logos/logo1.png", 2.00)
-logo2 = util.resize_image(util.path + "/media/logos/logo2.png", 2.00)
-logo3 = util.resize_image(util.path + "/media/logos/logo3.png", 2.00)
+# Construcción robusta de rutas
+path_logo1 = os.path.join(util.path, "media", "Logos", "Logo1.png")
+path_logo2 = os.path.join(util.path, "media", "Logos", "Logo2.png")
+path_logo3 = os.path.join(util.path, "media", "Logos", "Logo3.png")
+
+# Procesa imágenes
+logo1 = util.resize_image(path_logo1, 2.00)
+logo2 = util.resize_image(path_logo2, 2.00)
+logo3 = util.resize_image(path_logo3, 2.00)
 
 util.Logos_y_Titulo(logo1, logo2, logo3)
 
